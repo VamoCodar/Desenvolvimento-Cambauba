@@ -1,0 +1,111 @@
+@media screen and (min-width:1901px) {
+    svg#bg__azul {
+        width: 400px;
+    }
+
+    /*    #pedagogia,
+    #acontece,
+    #matriculas {
+        color: white;
+
+    } */
+
+    .icon-detalhes-bg {
+        position: absolute;
+        top: 0px !important;
+        right: 0;
+        width: 350px !important;
+        height: 100%;
+    
+        #icon-detalhes-bg {
+            position: absolute;
+            top: 0;
+            right: 150px;
+            width: 200px ;
+        }
+    
+    }
+}
+
+
+
+@media screen and (max-width:1900px) and (min-width: 1846px) {
+    svg#bg__azul {
+        width: 720px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1847px) and (min-width: 1784px) {
+    svg#bg__azul {
+        width: 690px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1783px) and (min-width: 1716px) {
+    svg#bg__azul {
+        width: 655px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1715px) and (min-width: 1682px) {
+    svg#bg__azul {
+        width: 640px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1681px) and (min-width: 1620px) {
+    svg#bg__azul {
+        width: 610px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1619px) and (min-width: 1583px) {
+    svg#bg__azul {
+        width: 590px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1582px) and (min-width: 1542px) {
+    svg#bg__azul {
+        width: 570px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1541px) and (min-width: 1487px) {
+    svg#bg__azul {
+        width: 545px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1541px) and (min-width: 1487px) {
+    svg#bg__azul {
+        width: 545px;
+    }
+
+    @include text-white;
+}
+
+@media screen and (max-width:1486px) {
+
+    @include text-white;
+
+    #institucional {
+        color: white;
+    }
+}

@@ -1,0 +1,43 @@
+//VARIAVEIS
+$primary-color: #2280C1;
+$secondary-color: #3BA0E6;
+$thirty-color: #A41B22;
+$font-color-a: #0A1E2B;
+$font-color-b: #1E3C7D;
+
+
+//mixins
+@mixin font($peso:400) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: $peso;
+}
+
+@mixin button__red($tamanho:16px,$padding-y:7px,$padding-x:40px) {
+    display: inline-block;
+    background: $thirty-color;
+    border-radius: 23px;
+    padding: $padding-y $padding-x;
+    color: white;
+    font-weight: 700;
+    font-size: $tamanho;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        background: #dd252e;
+        transform: scale(1.05);
+        
+    }
+}
+
+@mixin text-white{
+    #pedagogia,
+    #acontece,
+    #matriculas {
+        color: white;
+
+    }
+}
+
+.d-flex {
+    display: flex
+}
