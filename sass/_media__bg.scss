@@ -1,6 +1,6 @@
 @media screen and (min-width:1901px) {
     svg#bg__azul {
-        width: 400px;
+        width: calc(400px + 90px);
     }
 
     /*    #pedagogia,
@@ -31,15 +31,16 @@
 
 @media screen and (max-width:1900px) and (min-width: 1846px) {
     svg#bg__azul {
-        width: 720px;
+        width: calc(730px + 90px);
     }
+   
 
     @include text-white;
 }
 
 @media screen and (max-width:1847px) and (min-width: 1784px) {
     svg#bg__azul {
-        width: 690px;
+        width: calc(690px + 90px);
     }
 
     @include text-white;
@@ -47,7 +48,7 @@
 
 @media screen and (max-width:1783px) and (min-width: 1716px) {
     svg#bg__azul {
-        width: 655px;
+        width: calc(655px + 90px);
     }
 
     @include text-white;
@@ -55,7 +56,7 @@
 
 @media screen and (max-width:1715px) and (min-width: 1682px) {
     svg#bg__azul {
-        width: 640px;
+        width: calc(640px + 90px);
     }
 
     @include text-white;
@@ -63,7 +64,7 @@
 
 @media screen and (max-width:1681px) and (min-width: 1620px) {
     svg#bg__azul {
-        width: 610px;
+        width: calc(610px + 90px);
     }
 
     @include text-white;
@@ -71,7 +72,7 @@
 
 @media screen and (max-width:1619px) and (min-width: 1583px) {
     svg#bg__azul {
-        width: 590px;
+        width: calc(590px + 90px);
     }
 
     @include text-white;
@@ -79,7 +80,7 @@
 
 @media screen and (max-width:1582px) and (min-width: 1542px) {
     svg#bg__azul {
-        width: 570px;
+        width: calc(570px + 90px);
     }
 
     @include text-white;
@@ -87,7 +88,7 @@
 
 @media screen and (max-width:1541px) and (min-width: 1487px) {
     svg#bg__azul {
-        width: 545px;
+        width: calc(545px + 90px);
     }
 
     @include text-white;
@@ -95,17 +96,75 @@
 
 @media screen and (max-width:1541px) and (min-width: 1487px) {
     svg#bg__azul {
-        width: 545px;
+        width: calc(545px + 90px);
     }
 
     @include text-white;
 }
 
-@media screen and (max-width:1486px) {
+@media screen and (max-width:1486px) and (min-width: 1452px) {
+    svg#bg__azul {
+        width: calc(525px + 90px);
+    }
 
     @include text-white;
 
-    #institucional {
+}
+
+@media screen and (max-width:1451px) and (min-width: 1402px) {
+    svg#bg__azul {
+        width: calc(500px + 90px);
+    }
+
+    @include text-white;
+
+}
+
+@media screen and (max-width:1401px) and (min-width: 1358px) {
+    svg#bg__azul {
+        width: calc(478px + 90px);
+    }
+
+    @include text-white;
+
+   /*  #institucional {
         color: white;
+    } */
+}
+
+@media screen and (max-width:1357px) and (min-width: 1312px) {
+    svg#bg__azul {
+        width: calc(455px + 90px);
     }
+
+    @include text-white;
+
+   /*  #institucional {
+        color: white;
+    } */
+}
+
+
+@media screen and (max-width:1311px) and (min-width: 1280px) {
+    svg#bg__azul {
+        width: calc(435px + 90px);
+    }
+
+    @include text-white;
+
+   /*  #institucional {
+        color: white;
+    } */
+}
+
+@media screen and (max-width:1280px)  and (min-width: 1000px)  {
+    svg#bg__azul {
+        width:525px;
+    }
+
+    @include text-white;
+
+  /*   #institucional {
+        color: white;
+    }  */
 }

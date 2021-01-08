@@ -1,5 +1,158 @@
-footer{
-height:400px;
-width:100%;
-background:rgb(255, 225, 225);
+footer {
+    height: 100%;
+    width: 100%;
+    background: $secondary-color;
+    padding-top: 20px;
+
+    .d-flex {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    ul {
+        margin: 10px 20px 10px 0;
+        align-self: flex-start;
+
+        a {
+            color: white;
+            margin-bottom: 10px;
+            display: block;
+
+            &:hover {
+                text-decoration: underline
+            }
+        }
+
+    }
+
+    h3 {
+        color: white;
+        font-size: 18px;
+
+    }
+
+    .footer__home {
+        max-width: 70px;
+
+    }
+
+    .footer__matriculas {
+
+        max-width: 100px;
+
+        h3 {
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+/* loguin */
+.footer__loguin {
+    align-self: flex-start;
+    margin-top: 10px;
+    flex: 1 0 200px;
+    min-width: 200px;
+
+    span h3 {
+        margin-bottom: 10px;
+        color: $thirty-color;
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    color: white;
+
+    .d-flex {
+        flex-direction: column;
+
+    }
+
+    label {
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 10px 10px 12px;
+        vertical-align: middle;
+    }
+
+
+}
+
+.footer__local {
+    min-width: 140px;
+}
+
+
+.campo__final {
+    flex-direction: row !important;
+    font-size: 14px;
+    align-content: center;
+    align-items: center;
+
+    .campo__final-esqueceu {
+        a {
+            color: $thirty-color;
+
+            &:hover {
+                text-decoration: underline
+            }
+        }
+    }
+}
+
+.footer__enviar {
+    @include button__red;
+    padding: 7px 30px;
+    text-align: center;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.footer__sociais {
+    margin: 20px 0;
+
+    a {
+        margin-right: 10px;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.mobile .footer__sociais{
+    justify-content: center;
+}
+
+.footer__copy {
+    margin: 10px auto;
+    padding: 0 10px;
+
+    p {
+        text-align: center;
+        color: white
+    }
+}
+
+
+/* MOBILEEEEEE */
+
+.mobile .footer__loguin {
+    order: -1;
+    flex: 1 0 280px;
 }

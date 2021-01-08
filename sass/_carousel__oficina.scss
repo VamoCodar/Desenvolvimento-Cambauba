@@ -2,12 +2,13 @@
 #oficinas {
     margin-top: 150px;
     overflow: hidden;
+    //height: 100%;
 
     .oficinas__container .d-flex {
         justify-content: center;
         padding: 20px 0;
 
-       
+
     }
 
     h2 {
@@ -21,32 +22,37 @@
     }
 
     .oficinas__card {
-      //  cursor: pointer;
+        //  cursor: pointer;
         position: relative;
         border: 1px solid $secondary-color;
         border-radius: 20px;
         background: white;
         transition: 0.3s ease;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         margin-top: 30px;
-        max-width: 400px;
-        width: 380px;
-        margin: 10px 10px;
+        max-width: 300px;
+        min-width: 300px;
+        width: 300px ;
+        margin: 10px 0px;
+        max-height: 400px;
+        height: 400px;
 
-        @include media(s) {
-            width: 0;
-            max-width: 350px;
-            padding-bottom: 45px;
+        @include media(ss) {
+            max-width: 250px;
+            min-width: 250px;
+            width: 250px;
+            height: 450px;
+            max-height: 450px;
+
 
         }
 
 
         h3 {
-            font-family: Segoe UI;
-            font-style: normal;
             font-weight: 700;
-            font-size: 42px;
+            font-size: 26px;
             color: $font-color-b;
+            margin: 15px 0;
 
             @include media(s) {
                 margin: 10px 0;
@@ -57,13 +63,15 @@
 
 
         .text {
-            margin: 0 30px;
+            margin: 0 15px;
         }
 
         .arrow-right {
             position: absolute;
-            right: 25px;
-            bottom: 20px;
+            right: 20px;
+            bottom: 15px;
+            width: 20px;
+            cursor: pointer;
         }
 
         &:hover {
@@ -73,20 +81,27 @@
 
         .container__image {
             width: 100%;
-            height: 160px;
+            height: 140px;
+            position: relative;
+            border-radius: 20px 20px 0 0;
+            max-width: 100%;
             position: relative;
             overflow: hidden;
-            border-radius: 20px;
 
             @include media(s) {
                 height: 120px;
-
+                max-width: 100%;
             }
 
 
             img {
+                max-width: initial;
                 object-fit: contain;
                 object-position: center center;
+                min-height: 150px;
+                min-width: 100%;
+                max-height: 180px;
+
             }
         }
     }
@@ -95,30 +110,33 @@
 
 //ARROWS
 
-.glide__arrows{
+.glide__arrows {
     overflow: hidden;
 }
-.glide__arrow--left{
+
+.glide__arrow--left {
     background-image: url(../img/a2.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    
+
     width: 60px;
     height: 60px;
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom: 0;
     margin: auto 0;
     left: -20px;
     cursor: pointer;
-    @include media(s){
-    left: 0px;
-    opacity:.6;
-    width: 30px;
-    height: 30px;
+
+    @include media(s) {
+        left: 0px;
+        opacity: .6;
+        width: 30px;
+        height: 30px;
     }
 }
-.glide__arrow--right{
+
+.glide__arrow--right {
     background-image: url(../img/a1.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -126,15 +144,15 @@
     height: 60px;
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom: 0;
     margin: auto 0;
     right: -20px;
     cursor: pointer;
 
-    @include media(s){
+    @include media(s) {
         right: 0px;
-        opacity:.6;
+        opacity: .6;
         width: 30px;
         height: 30px;
-        }
+    }
 }
