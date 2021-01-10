@@ -55,7 +55,7 @@ html {
         margin-top: 40px;
         display: grid;
         overflow: hidden;
-       
+
         // grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "imagem texto"
@@ -129,7 +129,7 @@ html {
             opacity: .3;
 
             @include media(s) {
-                bottom: -250px;
+                bottom: -430px;
 
             }
 
@@ -163,7 +163,7 @@ html {
         //titulo  info
         h5 {
             margin: 10px 0;
-            margin-top:5px;
+            margin-top: 5px;
             font-size: 18px;
             color: $primary-color;
         }
@@ -215,15 +215,68 @@ html {
     margin-top: 80px;
 }
 
+.datas {
+
+
+    li {
+        padding-bottom: 0px;
+        padding-top: 10px;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 1px;
+            background: $primary-color;
+            left: 0px;
+            width: 100%;
+            opacity: .3;
+
+        }
+
+    }
+
+
+
+}
+
 //MOBILEEE
 .mobile #oficina {
     .oficina__wrapper {
-        grid-template-areas:
-            "imagem"
-            "texto"
-            "icones";
+
+        display: flex;
+        flex-direction: column;
         max-width: 500px;
         grid-gap: 30px;
+        margin-bottom: 40px;
 
+        img {
+            object-fit: cover;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+    }
+
+    .oficina__info {
+        grid-template-columns: 1fr;
+        grid-template-rows: initial;
+        max-width: 100%;
+        grid-gap: 25px 0;
+
+        p {
+            max-width: 280px
+        }
+
+    }
+
+    .datas {
+        display: flex;
+        flex-direction: column;
+
+        li:after {
+            opacity: .2;
+        }
     }
 }
