@@ -45,244 +45,147 @@ html {
     background: white !important;
 }
 
-@import "bg__intro__singles";
 
-
-//detalhes da OFICINA
-#oficina {
-    .oficina__wrapper {
-        margin: 0 auto;
-        margin-top: 40px;
-        display: grid;
-        overflow: hidden;
-
-        // grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "imagem texto"
-            "imagem icones"
-        ;
-        grid-gap: 30px;
-
-        img {
-            //max-width: 300px;
-            max-width: 620px;
-            grid-area: imagem;
-        }
-    }
-
-    .oficina__texto {
-        grid-area: texto;
-        max-width: 600px;
-
-        /* titulo oficina */
-        h2 {
-            font-weight: bold;
-            font-size: 42px;
-            color: $primary-color;
-            display: flex;
-            align-items: center;
-            max-width: 95%;
-            margin-bottom: 20px;
-
-            @include media(s) {
-                font-size: 32px;
-            }
-        }
-
-        .icon__titulo {
-            display: block;
-            width: 50px;
-            height: 50px;
-            background-image: url(../img/page-oficinas/art.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-left: 30px;
-        }
-
-        p {
-            max-width: 650px;
-        }
-    }
-
-    .oficina__info {
-        display: grid;
-        grid-area: icones;
-        max-width: 600px;
-        grid-gap: 10px 20px;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        transition: all 0.3s ease;
-        position: relative;
-
-        &:after {
-            content: "";
-            background-image: url(../img/detalhe-2-azul.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 120px;
-            height: 100%;
-            display: inline-block;
-            right: 0px;
-            bottom: -280px;
-            z-index: 99;
-            opacity: .3;
-
-            @include media(s) {
-                bottom: -430px;
-
-            }
-
-        }
-
-        //bloco da info
-        div {
-            margin: 10px 0 0 5px;
-
-            &:hover {
-                i svg path {
-                    transition: all 0.3s ease;
-
-                    fill: $font-color-a;
-                }
-            }
-
-            &:hover {
-
-                h5,
-                p,
-                li,
-                a {
-                    transition: all 0.3s ease;
-
-                    color: $font-color-a;
-                }
-            }
-        }
-
-        //titulo  info
-        h5 {
-            margin: 10px 0;
-            margin-top: 5px;
-            font-size: 18px;
-            color: $primary-color;
-        }
-
-        i svg {
-            width: 30px;
-            transition: fill 0.3 ease;
-
-            path {
-                fill: $primary-color;
-
-            }
-        }
-
-        a {
-            color: $primary-color;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        p,
-        li {
-            color: $primary-color;
-        }
-        p{
-            max-width: 220px;
-        }
-
+.container__linha {
+    width: 90%;
+    min-height: 900px;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    margin: 100px auto;
+    margin-top: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    @include media(s) {
+        width: 99%;
 
     }
 
-    .button__red {
-        @include button__red(18px, 10px);
-        margin: 0 auto;
-        text-align: center;
-        display: grid;
-        max-width: 280px;
-        margin-top: 40px;
+    h1,
+    h2 {
+        margin: 30px 0;
+        font-size: 28px;
+        color: $primary-color;
 
         @include media(s) {
-            margin-top: 0px;
+            font-size: 22px;
         }
-
-
     }
 
+    .traco {
+        height: 1px;
+        width: 95%;
+        background-color: #B8B8B8;
+        ;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
-#oficinas {
-    margin-top: 80px;
+//estilos dos input radio 
+.formulario__matricula {
+    margin: 0 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media(s){
+    margin: 0;
+    flex-direction: column;
+
+    }
+
+    .form__item {
+        margin: 10px;
+
+        h5 {
+            text-align: start;
+            margin: 15px 5px;
+            margin-left: 10px;
+            font-size: 22px;
+            @include media(s){
+                font-size:20px;
+            }
+        }
+
+        .form__check {
+            display: flex;
+            margin-bottom: 10px;
+
+        }
+    }
 }
 
-.datas {
-
-
-    li {
-       // padding-bottom: -15px;
-        padding-top: 5px;
-        display: inline-block;
-
-        &:after {
-            content: '';
-            display: inline-block;
-            width: 0;
-            height: 1px;
-            background: $primary-color;
-            left: 0px;
-            width: 100%;
-            opacity: .3;
-
-        }
+.form__dados {
+    text-align: start;
+    //margin: 0  auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    //reset input
+     display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    @include media(s){
+        margin-right: 0px;
+    margin-top: 30px;
 
     }
+    input {
+        border-color: initial;
+        background: initial;
+        border-width: initial;
+        @include font;
+        border-style: initial;
+      }
+    label {
+        font-weight: 700;
+        font-size: 22px;
+        @include media(s){
+            font-size:20px;
+        }
+    }
 
-
-
+    input {
+       margin-top: 5px;
+       padding-bottom: 5px;
+       border-bottom: 1px solid #B8B8B8;
+       transition:0.3s ease;
+    }
+    input:active{
+        border-color: $primary-color;
+    }
+    input:focus{
+        border-color: $primary-color;
+    }
+}
+.new__row{
+    width:100%;
+    display: flex;
+   @include media(s){
+       flex-direction: column;
+   }
 }
 
-//MOBILEEE
-.mobile #oficina {
-    .oficina__wrapper {
 
-        display: flex;
-        flex-direction: column;
-        max-width: 500px;
-        grid-gap: 30px;
-        margin-bottom: 40px;
-
-        img {
-            object-fit: cover;
-            height: 350px;
-            border-radius: 20px;
-        }
-
+.form__termos{
+    text-align: start;
+    margin: 30px 0;
+    margin-bottom:15px;
+    p{
+        margin-bottom: 10px;
+        font-size: 14px;
     }
+   
+}
 
-    .oficina__info {
-        grid-template-columns: 1fr;
-        grid-template-rows: initial;
-        max-width: 100%;
-        grid-gap: 25px 0;
-
-        p {
-            max-width: 280px
-        }
-
-    }
-
-    .datas {
-        display: flex;
-        flex-direction: column;
-
-        li:after {
-            opacity: .2;
-        }
-    }
-    /* i svg{
-        margin-left: 5px;
-    } */
+.concordo{
+    margin-bottom: 20px;
+    margin-right: auto;
+    text-align: start;
+}
+.form__enviar{
+    @include button__red;
+    margin-right: auto;
+    display: block;
 }
