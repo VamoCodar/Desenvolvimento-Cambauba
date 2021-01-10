@@ -37,6 +37,12 @@ $font-color-b: #1E3C7D;
 
     }
 }
+@mixin tittle-single($tamanho:52px){
+    font-weight: bold;
+    font-size: $tamanho;
+    text-transform: uppercase;
+    color: #FFFFFF;
+} 
 
 .d-flex {
     display: flex

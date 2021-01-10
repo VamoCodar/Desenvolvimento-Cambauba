@@ -64,7 +64,13 @@ fieldset {
   border-color: transparent;
   border-image: initial;
 }
-
+figure{
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end:0;
+}
 .input {
   text-rendering: auto;
   color: -internal-light-dark(black, white);

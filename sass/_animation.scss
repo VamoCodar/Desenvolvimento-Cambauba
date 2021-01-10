@@ -29,3 +29,11 @@
         transform: translateY(10px);
     }
 }
+
+@keyframes arrowRight {
+   
+    100%{
+        transform: translateX(5px);
+    }
+}
+

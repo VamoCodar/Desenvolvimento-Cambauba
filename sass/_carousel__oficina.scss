@@ -72,10 +72,16 @@
             bottom: 15px;
             width: 20px;
             cursor: pointer;
+            transition: 0.3s ease;
         }
 
         &:hover {
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+            .arrow-right  {
+                animation:arrowRight .7s ease-in-out alternate infinite 1s;
+                
+                
+            }
 
         }
 
@@ -104,6 +110,7 @@
 
             }
         }
+       
     }
 }
 
