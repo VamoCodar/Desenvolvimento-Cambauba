@@ -65,7 +65,7 @@ html {
 
         img {
             //max-width: 300px;
-            max-width: 560px;
+            max-width: 620px;
             grid-area: imagem;
         }
     }
@@ -124,7 +124,7 @@ html {
             height: 100%;
             display: inline-block;
             right: 0px;
-            bottom: -200px;
+            bottom: -280px;
             z-index: 99;
             opacity: .3;
 
@@ -190,6 +190,9 @@ html {
         li {
             color: $primary-color;
         }
+        p{
+            max-width: 220px;
+        }
 
 
     }
@@ -219,8 +222,8 @@ html {
 
 
     li {
-        padding-bottom: 0px;
-        padding-top: 10px;
+       // padding-bottom: -15px;
+        padding-top: 5px;
         display: inline-block;
 
         &:after {
@@ -279,4 +282,7 @@ html {
             opacity: .2;
         }
     }
+    /* i svg{
+        margin-left: 5px;
+    } */
 }

@@ -16,6 +16,9 @@
             margin: 0 auto;
             text-align: center;
             @include tittle-single;
+            @include media(s){
+                font-size: 42px;
+            }
         }
 
         figure {
