@@ -55,7 +55,7 @@ html {
         margin-top: 40px;
         display: grid;
         overflow: hidden;
-        height: 100%;
+
         // grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "imagem texto"
@@ -198,12 +198,12 @@ html {
     }
 
     .button__red {
-        @include button__red(20px, 12px);
+        @include button__red(18px, 10px);
         margin: 0 auto;
         text-align: center;
         display: grid;
-        max-width: 300px;
-        margin-top: 0px;
+        max-width: 280px;
+        margin-top: 40px;
 
         @include media(s) {
             margin-top: 0px;
@@ -216,7 +216,6 @@ html {
 
 #oficinas {
     margin-top: 80px;
-    margin-bottom: 60px;
 }
 
 .datas {
