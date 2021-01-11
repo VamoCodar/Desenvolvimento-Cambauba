@@ -15,8 +15,11 @@
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/button-group";
 
 
+$form-check-padding-start: 0px;
 //imports projeto
 @import "reset";
 @import "responsivo";
@@ -57,6 +60,7 @@ html {
     overflow: hidden;
     position: relative;
     padding-bottom: 20px;
+
     @include media(s) {
         width: 99%;
 
@@ -90,10 +94,14 @@ html {
     display: flex;
     flex-wrap: wrap;
 
-    @include media(s){
-    margin: 0;
-    flex-direction: column;
+    @include media(s) {
+        margin: 0;
+        flex-direction: column;
 
+    }
+
+    input[type=radio]:checked {
+        color: red !important;
     }
 
     .form__item {
@@ -104,8 +112,9 @@ html {
             margin: 15px 5px;
             margin-left: 10px;
             font-size: 22px;
-            @include media(s){
-                font-size:20px;
+
+            @include media(s) {
+                font-size: 20px;
             }
         }
 
@@ -123,69 +132,82 @@ html {
     margin-top: 20px;
     margin-right: 20px;
     //reset input
-     display: flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    @include media(s){
+
+    @include media(s) {
         margin-right: 0px;
-    margin-top: 30px;
+        margin-top: 30px;
 
     }
+
     input {
         border-color: initial;
         background: initial;
         border-width: initial;
         @include font;
         border-style: initial;
-      }
+    }
+
     label {
         font-weight: 700;
         font-size: 22px;
-        @include media(s){
-            font-size:20px;
+
+        @include media(s) {
+            font-size: 20px;
         }
     }
 
     input {
-       margin-top: 5px;
-       padding-bottom: 5px;
-       border-bottom: 1px solid #B8B8B8;
-       transition:0.3s ease;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #B8B8B8;
+        transition: 0.3s ease;
     }
-    input:active{
+
+    input:active {
         border-color: $primary-color;
     }
-    input:focus{
+
+    input:focus {
         border-color: $primary-color;
     }
 }
-.new__row{
-    width:100%;
+
+.new__row {
+    width: 100%;
     display: flex;
-   @include media(s){
-       flex-direction: column;
-   }
+
+    @include media(s) {
+        flex-direction: column;
+    }
 }
 
 
-.form__termos{
+.form__termos {
     text-align: start;
     margin: 30px 0;
-    margin-bottom:15px;
-    p{
+    margin-bottom: 15px;
+
+    p {
         margin-bottom: 10px;
         font-size: 14px;
     }
-   
+
 }
 
-.concordo{
+.concordo {
     margin-bottom: 20px;
     margin-right: auto;
     text-align: start;
 }
-.form__enviar{
+
+.form__enviar {
     @include button__red;
     margin-right: auto;
     display: block;
 }
+
+
+
