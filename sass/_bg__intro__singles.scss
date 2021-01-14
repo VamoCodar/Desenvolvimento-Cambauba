@@ -19,6 +19,9 @@
             @include media(s){
                 font-size: 42px;
             }
+            @include media(ss){
+                font-size:30px;
+            }
         }
 
         figure {

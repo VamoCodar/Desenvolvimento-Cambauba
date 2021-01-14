@@ -6,42 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- carousel -->
     <link rel="stylesheet" href="css/glide.core.min.css">
-
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
     <!-- css home -->
-    <link rel="stylesheet" href="css/main__home.css">
-    <title>Cambaúba Escola</title>
+    <link rel="stylesheet" href="css/main__projetos-permanentes.css">
+    <title>Cambaúba Escola - Oficinas</title>
 </head>
 
 <body>
 
+    <!-- imagem da intro -->
+    <header id="bg__intro">
+        <div class="container__bg">
+            <h1>Projetos Permanentes</h1>
+            <figure aria-label="criança com maos de tinta"></figure>
+            <span class="bg__degrade"></span>
+        </div>
+    </header>
 
-    <main>
-        <header class="intro">
-            <div class="intro__container container">
+    <div id="projetos">
+        <div class="container">
+            <div class="d-flex projetos__wrapper">
 
-                <div class="d-flex ">
-                    <div class="text__intro">
-                        <h1>MATRÍCULAS <br>
-                            ABERTAS<br>
-                            2021</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button><a href="matricula.html">FAÇA JÁ A SUA!</a></button>
-                    </div>
-                    <div class="crianca">
-                        <img src="img/criança-intro.png" alt="criança">
+
+                <div class="centro col-lg-9">
+                    <h1>Aniversario da escola</h1>
+
+                    <div class="centro__container">
+
+                        <div class="slider-for">
+                            <div><img src="img/page-projetos/image1.jpg" alt="alunos"></div>
+                            <div><img src="img/page-projetos/image2.jpg" alt="alunos"></div>
+                            <div><img src="img/page-projetos/image3.jpg" alt="alunos"></div>
+
+                        </div>
+
+                        <div class="centro__carousel ">
+                            <div class="slider-nav col-md-6 mx-auto">
+                                <div class="slider__item"><img src="img/page-projetos/image1.jpg" alt="alunos"></div>
+                                <div class="slider__item"><img src="img/page-projetos/image2.jpg" alt="alunos"></div>
+                                <div class="slider__item"><img src="img/page-projetos/image3.jpg" alt="alunos"></div>
+                                <div class="slider__item"><img src="img/page-projetos/image3.jpg" alt="alunos"></div>
+                                <div class="slider__item"><img src="img/page-projetos/image3.jpg" alt="alunos"></div>
+
+
+                            </div>
+                            <span class="right"></span>
+                            <span class="left"></span>
+                        </div>
+                        <p class="centro__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                            and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                            the 1500s, when an unknown printer took.
+                        </p>
+                        <a class="acesse" href="#">Acesse o Arquivo </a>
                     </div>
                 </div>
+                <nav class="sidebar col-lg-3">
+                    <div class="sidebar__container">
+                        <div class="sidebar__wrapper">
+
+                            <h2>Mais Recentes</h2>
+                            <ul>
+                                <li><a href="#">
+                                        <h3>Bolo da tia sonia</h3>
+                                    </a></li>
+                                <li><a href="#">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum
+                                            has
+                                            been the in...</p>
+                                    </a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">
+                                        <h3>Festa do 9° ano</h3>
+                                    </a></li>
+                                <li><a href="#">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum
+                                            has
+                                            been the in...</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="#">
+                                    <h3>Poesia da aline</h3>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum
+                                        has
+                                        been the in...</p>
+                                </a></li>
+                        </ul>
+                    </div>
+
+
+                </nav>
             </div>
-        </header>
-        <span class="arrow">
-            <a href="#oficinas"><img src="img/arrow-down.svg" alt="seta"></a>
-        </span>
-    </main>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
 
     <section id="oficinas">
-        <h2>Conheça nossas Oficinas</h2>
+        <h2>Conheça mais Oficinas</h2>
         <div class="container">
             <div class="oficinas__container glide">
                 <div class="glide__track" data-glide-el="track">
@@ -180,94 +262,6 @@
 
                         </div>
 
-
-
-
-                        <div class="oficinas__card glide__slide card__3">
-                            <div class="container__image">
-                                <img src="img/oficina-poesia.png" alt="oficina-poesia">
-                            </div>
-                            <a href="oficina-poesias.html">
-
-                                <div class="text">
-                                    <h3>Festival de Poesias</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum
-                                        has
-                                        been
-                                        the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a
-                                        galley
-                                        of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </a>
-                            <span class="arrow-right"><img src="img/arrow-right.svg" alt="arrow"></span>
-
-                        </div>
-                        <div class="oficinas__card glide__slide card__4">
-                            <div class="container__image">
-                                <img src="img/oficina-3.jpg" alt="oficina-poesia">
-                            </div>
-                            <a href="oficina-poesias.html">
-
-                                <div class="text">
-                                    <h3>Balé ao ar livre</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum
-                                        has
-                                        been
-                                        the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a
-                                        galley
-                                        of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </a>
-                            <span class="arrow-right"><img src="img/arrow-right.svg" alt="arrow"></span>
-
-                        </div>
-                        <div class="oficinas__card glide__slide card__5">
-                            <div class="container__image">
-                                <img src="img/oficina-4.jpg" alt="oficina-poesia">
-                            </div>
-                            <a href="oficina-poesias.html">
-
-                                <div class="text">
-                                    <h3>Natação para crianças</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum
-                                        has
-                                        been
-                                        the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a
-                                        galley
-                                        of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </a>
-                            <span class="arrow-right"><img src="img/arrow-right.svg" alt="arrow"></span>
-
-                        </div>
-                        <div class="oficinas__card glide__slide card__3">
-                            <div class="container__image">
-                                <img src="img/oficina-poesia.png" alt="oficina-poesia">
-                            </div>
-                            <a href="oficina-poesias.html">
-
-                                <div class="text">
-                                    <h3>Festival de Poesias</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum
-                                        has
-                                        been
-                                        the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a
-                                        galley
-                                        of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </a>
-                            <span class="arrow-right"><img src="img/arrow-right.svg" alt="arrow"></span>
-
-                        </div>
-
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
                         <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
@@ -276,95 +270,6 @@
                 </div>
             </div>
     </section>
-
-    <h2 class="quebra">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </h2>
-
-    <section class="historia">
-        <div class="container container__historia">
-            <h2>Venha fazer parte desta história!</h2>
-            <a href="matricula.html">Faça já sua matrícula</a>
-            <i class="clips"></i>
-            <i class="x"></i>
-        </div>
-    </section>
-
-    <section class="projetos">
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-lg-6 womam">
-                    <img src="img/womam.png" alt="estudante">
-                </div>
-                <div class="col-lg-6 projetos__texto">
-                    <h2>Venha Descobrir
-                        <br> mais.</h2>
-                    <ul class="projetos__permanentes">
-                        <li class="projetos__permanentes-li">
-                            <a href="#" class="projetos__permanentes-tittle">
-                                <h3>Projetos Permanentes</h3>
-                            </a> </li>
-
-                        <li>
-                            <p>Na EMC, entre os princípios pedagógicos que estruturam o processo de ensino e de
-                                aprendizagem,
-                                destacam-se como eixos articuladores, os projetos interdisciplinares que, de tão
-                                identificados
-                                com a Proposta Pedagógica, são permanentes</p>
-                        </li>
-
-                        <li class="link">
-                            <a href="#" class="link__seta">
-                                Leia mais
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="projetos__permanentes">
-                        <li class="projetos__permanentes-li">
-                            <a href="#" class="projetos__permanentes-tittle">
-                                <h3>Projetos Permanentes</h3>
-                            </a> </li>
-
-                        <li>
-                            <p>Na EMC, entre os princípios pedagógicos que estruturam o processo de ensino e de
-                                aprendizagem,
-                                destacam-se como eixos articuladores, os projetos interdisciplinares que, de tão
-                                identificados
-                                com a Proposta Pedagógica, são permanentes</p>
-                        </li>
-
-                        <li class="link">
-                            <a href="#" class="link__seta">
-                                Leia mais
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="projetos__permanentes">
-                        <li class="projetos__permanentes-li">
-                            <a href="#" class="projetos__permanentes-tittle">
-                                <h3>Projetos Permanentes</h3>
-                            </a> </li>
-
-                        <li>
-                            <p>Na EMC, entre os princípios pedagógicos que estruturam o processo de ensino e de
-                                aprendizagem,
-                                destacam-se como eixos articuladores, os projetos interdisciplinares que, de tão
-                                identificados
-                                com a Proposta Pedagógica, são permanentes</p>
-                        </li>
-
-                        <li class="link">
-                            <a href="#" class="link__seta">
-                                Leia mais
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
 
     <footer>
@@ -485,6 +390,9 @@
             </div>
         </div>
     </footer>
+
+
+
     <!-- menu desktop -->
     <nav class="menu navbar fixed-top">
 
@@ -538,29 +446,24 @@
 
     </nav>
 
-    <!-- bg azul intro  -->
-    <svg id="bg__azul" viewBox="0 0 820 989" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-        <path
-            d="M820 983.939V0H1.3197C0.737427 3.40993 0.244995 6.80708 0 10.7145V21.9475C0.220825 25.9668 0.674561 30.5682 1.43701 36.0028C10.7997 89.4175 40.9647 99.6789 73.4476 110.729C84.829 114.6 96.4948 118.569 107.65 124.524C180.174 157.433 174.701 220.679 168.59 291.301C166.177 319.179 163.666 348.206 165.813 376.971C170.87 439.265 191.103 491.724 241.679 508.115C247.74 509.769 253.479 511.211 258.952 512.586C296.867 522.112 322.011 528.429 352.948 579.999C354.529 582.458 356.024 584.939 357.434 587.444C379.087 625.838 382.414 670.495 385.689 714.463C390.782 782.823 395.75 849.519 469.277 888.426C490.101 899.998 513.556 900.224 537.061 900.45C553.513 900.609 569.989 900.767 585.606 904.817C626.401 909.858 664.209 932.294 701.329 954.322C704.081 955.955 706.829 957.586 709.575 959.208C721.259 967.284 741.346 979.73 741.342 979.164C754.268 984.61 767.251 987.957 779.949 989H796.769C804.724 988.321 812.497 986.652 820 983.939Z"
-            fill="#2280C1" />
-    </svg>
+    <!-- jquery bootstrap pooper ======================================================== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
-
-    <!-- SVGS detalhes bg -->
-    <svg class="icon-detalhes-bg">
-        <use xlink:href="img/detalhes-bg-defs.svg#icon-detalhes-bg"></use>
-    </svg>
-
-    <svg class="icon__avulso">
-        <use xlink:href="img/icones-defs.svg#i-2-3"></use>
-    </svg>
-    <svg class="icon__avulso-2">
-        <use xlink:href="img/icones-defs.svg#i-x210"></use>
-    </svg>
-
-    <!-- carousel -->
+    <!-- glide carousel -->
     <script type="text/javascript" src="js/glide.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
 
     <script>
         // Define the query
@@ -642,16 +545,41 @@
             menuFixo.forEach((i) => {
                 if (window.pageYOffset >= 20) {
                     body.classList.add("ativoScrool");
-                    i.setAttribute("style", "background-color: white;");
+                    // i.setAttribute("style", "background-color: white;");
                 } else if (window.pageYOffset < 50) {
                     i.removeAttribute("style", "background-color");
-                    body.classList.remove("ativoScrool");
+                    // body.classList.remove("ativoScrool");
                 }
             });
         }
         menuPreenchido();
+        //slick ======================
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            arrows: false,
 
-        /* carousel  ===================================*/
+            centerMode: true,
+            focusOnSelect: true
+        });
+
+        $(".right").click(function () {
+            $(".slider-for").slick("slickNext");
+        });
+        $(".left").click(function () {
+            $(".slider-for").slick("slickPrev");
+        });
+
+
 
         new Glide('.glide', {
             type: 'slider',
@@ -675,7 +603,7 @@
                     startAt: 1,
                     gap: 40,
                     perView: 1,
-                     focusAt: "center",
+                    // focusAt: "center",
                     rewind: false,
                     perTouch: 1,
                     peek: {
@@ -690,7 +618,6 @@
                     gap: 20,
                     startAt: 1,
                     perView: 1,
-                    perTouch: 1,
                     focusAt: "center",
                     rewind: false,
                     peek: {
@@ -727,9 +654,9 @@
         itemMenu.forEach((i) => i.addEventListener("click", callback)); //fecha on click
         window.addEventListener("resize", checagem); //responsivo
         document.addEventListener("DOMContentLoaded", checagem); //responsivo
-        document.querySelector(".arrow").addEventListener('click', () => {
-            scrollTo(document.getElementById("oficinas")); //scrool suave
-        });
+        /*  document.querySelector(".arrow").addEventListener('click', () => {
+             scrollTo(document.getElementById("oficinas")); //scrool suave
+         }); */
     </script>
 </body>
 

@@ -1,0 +1,365 @@
+@import "fonts";
+@import "variaveis__mixins";
+//bootstrap
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+// Opcional
+@import "bootstrap/scss/root";
+//@import "./bootstrap/scss/reboot";
+//@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+
+
+//imports projeto
+@import "reset";
+@import "responsivo";
+@import "animation";
+@import "menu";
+@import "footer";
+
+
+.container {
+    max-width: 1280px
+}
+
+body {
+    @include font;
+    //height: 4000px;
+    scroll-behavior: smooth;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+@import "bg__intro__singles";
+
+
+//sidebar ==============================
+
+
+
+body {
+    position: relative;
+
+    /* &::after {
+        content: '';
+        background-image: url(../img/detalhe-2-azul.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        width: 150px;
+        height: 300px;
+        display: block;
+        top: 1300px;
+        opacity: .6;
+
+        @include media(s) {
+            width: 100px;
+            top: 1450px;
+        }
+    } */
+}
+
+
+
+
+#intro__blog {
+    height: 290px;
+    width: 100%;
+    background: $primary-color;
+
+    h1 {
+        padding-top: 120px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 52px;
+
+        @include media(s) {
+            font-size: 32px;
+        }
+    }
+}
+
+@import "sidebar";
+
+@media screen and (max-width:1100px)
+
+/* and (min-width: 1846px)  */
+    {
+    nav.sidebar {
+        display: none;
+    }
+
+
+
+}
+
+
+.sidebar {
+
+    margin-top: 0;
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.tags__wrapper {
+    flex-wrap: wrap;
+
+    a {
+        padding: 5px;
+        border: 1px solid $primary-color;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 3px;
+        color: $primary-color;
+        font-size: 14px;
+        transition: 0.3s ease;
+        will-change: transform;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.blog__inner {
+    padding: 80px 0;
+}
+
+.second {
+    margin: 10px 0;
+}
+
+
+.menu {
+    background: transparent !important;
+
+    ul li a:not(.button__red) {
+        color: white;
+    }
+}
+
+.ativoScrool .fixed-top {
+    background: white !important;
+}
+
+body.ativoScrool .menu {
+    ul li {
+        a:not(.button__red) {
+            color: $primary-color;
+        }
+    }
+}
+
+
+.blog__container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.blog__inner .container {
+    @include media(m) {
+        max-width: 550px;
+    }
+
+
+}
+
+.blog__inner {
+    .d-flex {
+        @include media(m) {
+            justify-content: center;
+        }
+    }
+}
+
+.blog__card {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid rgba(34, 128, 193, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.1));
+    max-width: 760px;
+    margin-top: 10px;
+
+    @include media(m) {
+        flex-direction: column;
+        height: 450px;
+        max-width: 350px;
+
+    }
+
+    height: 300px;
+
+    .card__img {
+        height: 100%;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 300px;
+            position: absolute;
+
+            @include media(m) {}
+        }
+    }
+
+    .card__texto {
+        margin-left: 15px;
+        padding: 15px 20px;
+
+        h2 a {
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 32px;
+
+            color: #2280C1;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include media(m) {
+                font-size: 24px;
+
+            }
+
+        }
+
+        span {
+            font-size: 13px;
+            color: #B8B8B8;
+            margin: 5px 0;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+            display: block;
+            max-width: 700px;
+        }
+    }
+
+    .card__img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px 0 0 20px;
+
+        img {
+            object-fit: cover;
+            position: absolute;
+            left: -4px;
+
+            @include media(s) {
+                left: 0;
+            }
+        }
+
+        @include media(s) {
+            border-radius: 20px 20px 0 0px;
+
+        }
+    }
+
+    &:hover {
+        a:last-child {
+            &:after {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+.actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    @include media(m) {
+        margin-top: 15px;
+
+    }
+
+    /*  @include media(s) {
+        flex-direction: column;
+    } */
+
+    a:first-child {
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+        margin-left: 3px;
+
+        &:hover {
+            &:before {
+                transform: scale(1.2);
+            }
+        }
+
+        &::before {
+            content: '';
+            background-image: url(../img/blog/share.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            transition: 0.3s ease;
+
+            @include media(s) {
+                /*      width: 100px;
+                top: 1450px;
+            } */
+            }
+        }
+    }
+
+    a:last-child {
+        display: flex;
+        align-items: center;
+        color: $thirty-color;
+        margin-right: 35px;
+
+        &::after {
+            content: '';
+            background-image: url(../img/blog/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 15px;
+            height: 13px;
+            display: inline-block;
+            transition: 0.3s ease;
+            margin-left: 5px;
+            transition: 0.3s ease;
+
+            @include media(s) {
+                /*      width: 100px;
+                top: 1450px;
+            } */
+            }
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
